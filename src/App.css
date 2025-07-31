@@ -1,0 +1,6 @@
+  body{
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(140deg, #eb6b6b 2%, #DFD9D9 30%);
+            min-height: 100vh;
+            color: #19191A;
+        }

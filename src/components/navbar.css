@@ -1,0 +1,10 @@
+nav{
+    background: #DFD9D9;
+            backdrop-filter: blur(30px);
+            border-bottom: 1px solid #FF8AA8;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            padding: 16px 0;
+            background-color:  #DFD9D9 !important;
+}
