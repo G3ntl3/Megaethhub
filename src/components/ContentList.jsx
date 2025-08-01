@@ -8,7 +8,7 @@ export default function ContentList() {
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/content");
+        const res = await axios.get("https://backend-for-megaeth-2.onrender.com/");
         setContents(res.data);
       } catch (err) {
         console.error("Error fetching content:", err);

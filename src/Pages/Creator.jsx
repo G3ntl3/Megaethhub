@@ -44,7 +44,7 @@ export default function UploadForm({ user }) {
       };
 
       const response = await axios.post(
-        "http://localhost:4000/api/content",
+        "https://backend-for-megaeth-2.onrender.com/",
         payload,
         {
           headers: {
