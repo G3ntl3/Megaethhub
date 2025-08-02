@@ -84,7 +84,7 @@ export default function Navbar() {
               ) : (
                 <button
                   onClick={loginWithTwitter}
-                  className="btn btn-primary btn-sm rounded-pill px-3 fw-semibold w-100 w-sm-auto"
+                  className="btn btn-primary btn-sm py-3 rounded-pill px-3 fw-semibold w-100 w-sm-auto"
                 >
                   Sign in with Twitter
                 </button>

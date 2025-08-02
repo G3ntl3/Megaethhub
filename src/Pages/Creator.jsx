@@ -74,9 +74,9 @@ export default function UploadForm({ user }) {
   };
 
   return (
-    <div className="card mx-auto my-4" style={{ maxWidth: "360px" }}>
+    <div className="card mx-auto my-4 result" style={{ maxWidth: "360px" }}>
       <div className="card-body">
-        <h5 className="card-title mb-3">Upload Content</h5>
+        <center className="card-title mb-3 fs-3">Upload Content</center>
         <form onSubmit={handleSubmit}>
           <div className="mb-2">
             <input

@@ -20,7 +20,7 @@ export default function ContentList() {
     fetchContent();
   }, []);
 
-  if (loading) return <p className="text-center">Loading...</p>;
+  if (loading) return <p className="text-center"> <small>Wait some secs more content Loading... </small><b>GMega</b></p>;
 
   return (
     <div className="container mt-4">
@@ -30,11 +30,16 @@ export default function ContentList() {
           <div className="  col-md-6 col-lg-4 mb-4" key={item._id}>
             <div className="result card h-100 shadow-sm">
               <div className="card-body">
-                <h5 className="card-title">{item.title}</h5>
-                <p className="card-text">{item.description}</p>
+                <h5 className="card-title"><b>Topic:  </b>
+ {item.title}</h5>
+                <p className="card-text"><b>Description:</b> {item.description}</p>
                 <p className="text-muted">
                   <small>
-                    {item.type} • {item.readTime || "N/A"} • By {item.author}
+                    <br />
+                    <b>Type:</b> {item.type} <br /> 
+                    <b>Author :</b> {item.author}  <br />
+                     <b>⌚</b>{item.readTime || "N/A"} 
+                     
                   </small>
                 </p>
                 <a
@@ -44,7 +49,8 @@ export default function ContentList() {
                   className="btn btn-sm btn-outline-primary"
                 >
                   View Content
-                </a>
+                </a><br />
+                <br /> <b className="fs-3">⭐</b>
               </div>
             </div>
           </div>
